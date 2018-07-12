@@ -200,6 +200,7 @@ a {
     top: 0;
     width: 100%;
     margin: 0;
+    margin-top: 70px;
     padding: 0;
     min-width: 980px;
     padding-top: 10px;
@@ -445,6 +446,7 @@ span .heading3, a .heading3 {
     border: solid 1px #5c633f;
     background-color: #5c633f;
 }
+
 .footer-widgets-1,
 .footer-widgets-2 {
     width: 47.5%; /* 570px / 1200px */
@@ -470,4 +472,204 @@ span .heading3, a .heading3 {
 
 .contact-info-list {
     display: list-item;
+}
+
+/* Contact tab - right side*/
+.pbMainArea {
+    overflow: hidden;
+    max-width: 100%;
+    _float: left;
+    _display: inline;
+}
+
+.pbArea {
+    margin: 0;
+    padding: 0px;
+    border-width: 0;
+}
+
+.pbNested {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+    _height: 1%;
+}
+
+.pbNestedWrapper {
+    overflow: visible;
+    clear: none;
+    min-width: 1em;
+}
+
+.pageTitle {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.heading1 {
+    font-size: 225%;
+    line-height: 1.222;
+    color: #07c;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.layout-column2 {
+    margin-top: -10px;
+}
+
+.layout-column2 .layout-right {
+    width: 67.2%;
+    max-width: 860px;
+    float: right;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+.section {
+    padding-top: 0px;
+    margin-bottom: 80px;
+    border-top: 1px solid #07c;
+    position: relative;
+}
+
+.section:before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 20px;
+    background: url(../images/common/icon_mickey.svg) no-repeat 0 0;
+    position: absolute;
+    top: -19px;
+    right: 20px;
+}
+
+.pbAnchor {
+    margin: 0;
+    padding: 2px;
+    font-family: "ＭＳ Ｐゴシック", MS Gothic, "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
+    line-height: normal;
+    text-indent: 0;
+    overflow: visible !important;
+}
+
+.pbNested:after {
+    content: "";
+    height: 0px;
+    clear: both;
+    display: block;
+}
+
+.heading2 {
+    font-size: 187.5%;
+    line-height: 1.267;
+    margin-bottom: 20px;
+    color: #07c;
+    text-align: center;
+}
+
+.accordion .accordionBlock:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.accordion .accordionBlock {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion .accordionTitle.is-active {
+    background-color: #f5fcff;
+}
+
+.accordion .accordionTitle {
+    padding: 25px 60px 25px 20px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-weight: bold;
+}
+
+.accordion .accordionTitle.is-active:before {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    margin-top: -6px;
+}
+
+.accordion .accordionTitle:before {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin-top: -12px;
+    border-right: 2px solid #07c;
+    border-bottom: 2px solid #07c;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/* contct tab - left side */
+.layout-column2 .layout-left {
+    float: left;
+    width: 25%;
+    max-width: 320px;
+    margin-left: 50px;
+}
+
+.leftNavigation-top, .leftNavigation-bottom {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.leftNavigation-top .categoryTitle, .leftNavigation-bottom .categoryTitle {
+    font-size: 150%;
+    color: #07c;
+    padding-bottom: 20px;
+}
+
+.leftNavigation-top .leftNavigation-block, .leftNavigation-bottom .leftNavigation-block {
+    margin-bottom: 20px;
+}
+
+.leftNavigation-top .link, .leftNavigation-bottom .link {
+    border-top: 1px solid #ccc;
+    margin-bottom: 35px;
+}
+
+.leftNavigation-top .link li a, .leftNavigation-bottom .link li a {
+    display: block;
+    padding: 20px 0;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#header .header-inner .header-top .languagemenu ul li,
+.linkList1 ul li,
+.linkList2 ul li,
+.linkList6 ul li,
+.linkList7 > ul > li,
+.leftNavigation-top .link li,
+.leftNavigation-bottom .link li,
+.column-2-3 .column-block {
+    background-image: -webkit-linear-gradient(left, #ccc, #ccc 1px, transparent 1px, transparent 2px);
+    background-image: linear-gradient(to right, #ccc, #ccc 1px, transparent 1px, transparent 2px);
+    background-size: 3px 1px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.well {
+    margin-top: 20px;
 }
