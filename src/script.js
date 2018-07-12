@@ -1,6 +1,6 @@
 //images slide show homepage
 
-$('.slider').each(function() {
+$('.slider').each(function () {
   let $this = $(this);
   let $group = $this.find('.slide_group');
   let $slides = $this.find('.slide');
@@ -34,7 +34,7 @@ $('.slider').each(function() {
     });
     $group.animate({
       left: animateLeft
-    }, function() {
+    }, function () {
       $slides.eq(currentIndex).css({
         display: 'none'
       });
@@ -50,7 +50,7 @@ $('.slider').each(function() {
 
   function advance() {
     clearTimeout(timeout);
-    timeout = setTimeout(function() {
+    timeout = setTimeout(function () {
       if (currentIndex < ($slides.length - 1)) {
         move(currentIndex + 1);
       } else {
@@ -59,7 +59,7 @@ $('.slider').each(function() {
     }, 4000);
   }
 
-  $('.next_btn').on('click', function() {
+  $('.next_btn').on('click', function () {
     if (currentIndex < ($slides.length - 1)) {
       move(currentIndex + 1);
     } else {
@@ -67,7 +67,7 @@ $('.slider').each(function() {
     }
   });
 
-  $('.previous_btn').on('click', function() {
+  $('.previous_btn').on('click', function () {
     if (currentIndex !== 0) {
       move(currentIndex - 1);
     } else {
@@ -75,17 +75,38 @@ $('.slider').each(function() {
     }
   });
 
-  $.each($slides, function(index) {
+  $.each($slides, function (index) {
     let $button = $('<a class="slide_btn">&bull;</a>');
 
     if (index === currentIndex) {
       $button.addClass('active');
     }
-    $button.on('click', function() {
+    $button.on('click', function () {
       move(index);
     }).appendTo('.slide_buttons');
     bulletArray.push($button);
   });
 
   advance();
+});
+
+//login - new user
+
+$(function () {
+
+  $('#login-form-link').click(function (e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  $('#register-form-link').click(function (e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+
 });
