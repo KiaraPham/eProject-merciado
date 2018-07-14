@@ -117,7 +117,7 @@ $(function () {
 // ticket
 
 // Play with the inputs -->
-var flights = [
+let flights = [
   {
     currency: "EUR",
     price: 128.67,
@@ -155,13 +155,13 @@ var flights = [
   }
 ];
 
-var carrier = {
+let carrier = {
   AF: "Air France",
   KL: "KLM Royal Dutch Airlines",
   BA: "British Airways"
 };
 
-var airports = [
+let airports = [
   {
     name: "Vichy-Charmeil Airport",
     city: "Vichy",
@@ -376,12 +376,12 @@ var airports = [
 ];
 
 (function() {
-  var _airports = _.groupBy(airports, o => o.country),
+  let _airports = _.groupBy(airports, o => o.country),
     selectIndex = [],
     selectData = [];
 
   _.each(_airports, (countryList, countryName) => {
-    var firstLeter = countryName.split("")[0];
+    let firstLeter = countryName.split("")[0];
     selectData.push(
       `<li class="sep" data-index="${firstLeter}">${countryName}</li>`
     );
@@ -399,12 +399,12 @@ var airports = [
   $(".select ul.select-data").html(selectData.join(""));
 
   // Calendar days
-  var days = [30];
-  for (var i = 0; i < 31; i++) {
+  let days = [30];
+  for (let i = 0; i < 31; i++) {
     days.push(i);
   }
 
-  var daysRender = _.map(days, function(i) {
+  let daysRender = _.map(days, function(i) {
     return `<span>${i + 1}</span>`;
   });
 
@@ -425,7 +425,7 @@ var airports = [
   });
 
   $(".control .close").on("click", function(evt) {
-    var z = $(evt.currentTarget).closest(".control");
+    let z = $(evt.currentTarget).closest(".control");
     setTimeout(() => {
       z.removeClass("open");
     }, 50);
@@ -433,7 +433,7 @@ var airports = [
 
   // SpinnerInput add/substract action
   $(".spinner button").on("click", function(evt) {
-    var isAdding = evt.currentTarget.getAttribute("data-action") == "plus",
+    let isAdding = evt.currentTarget.getAttribute("data-action") == "plus",
       $input = $('input[name="passengers"]:checked'),
       $control = $input.siblings("div").find("span"),
       value = parseInt($control.text());
@@ -446,7 +446,7 @@ var airports = [
 
   // SelectInput find index
   $(".select-index").on("click", "li", function(evt) {
-    var index = evt.currentTarget.textContent,
+    let index = evt.currentTarget.textContent,
       $nano = $(evt.currentTarget)
         .parent(".select-index")
         .siblings(".nano"),
@@ -457,24 +457,24 @@ var airports = [
 
   // SelectInput set data
   $(".select-data").on("click", "li:not(.sep)", function(evt) {
-    var text = evt.currentTarget.textContent,
+    let text = evt.currentTarget.textContent,
       iata = evt.currentTarget.getAttribute("data-iata"),
       $select = $(evt.currentTarget).closest(".select"),
       $nameContainer = $select.find(".airport-name");
 
     if ($nameContainer.data("role") == "from") {
-      var _iata = iata.split("");
-      var div = $(".header .fromPlace").addClass("rotate");
-      var span = $(".header .fromPlace span");
+      let _iata = iata.split("");
+      let div = $(".header .fromPlace").addClass("rotate");
+      let span = $(".header .fromPlace span");
       span.eq(0).text(_iata[0]);
       span.eq(1).text(_iata[1]);
       span.eq(2).text(_iata[2]);
       setTimeout(() => div.removeClass("rotate"), 900);
       //$('.xfrom').text(iata);
     } else {
-      var _iata = iata.split("");
-      var div = $(".header .toPlace").addClass("rotate");
-      var span = $(".header .toPlace span");
+      let _iata = iata.split("");
+      let div = $(".header .toPlace").addClass("rotate");
+      let span = $(".header .toPlace span");
       span.eq(0).text(_iata[0]);
       span.eq(1).text(_iata[1]);
       span.eq(2).text(_iata[2]);
@@ -493,7 +493,7 @@ var airports = [
 
   // Date input
   $(".calendar .days span").on("click", function(evt) {
-    var $this = $(evt.currentTarget),
+    let $this = $(evt.currentTarget),
       day = evt.currentTarget.textContent;
 
     $this
@@ -501,15 +501,15 @@ var airports = [
       .siblings("span")
       .removeClass("checked");
 
-    var date = new Date(`5/${day}/2017`);
-    var [wd, m, d] = date.toDateString().split(" ");
+    let date = new Date(`5/${day}/2017`);
+    let [wd, m, d] = date.toDateString().split(" ");
     $(".dateinput .control-item span")
       .eq(0)
       .text(`${wd.toUpperCase()}, ${d} ${m}`);
   });
 
   $(".btnBack").on("click", function(evt) {
-    var wrap = document.querySelector(".wrap"),
+    let wrap = document.querySelector(".wrap"),
       index = parseInt(wrap.getAttribute("data-pos"));
 
     $(".ticket button.btnBook").text("Book Flight");
@@ -525,8 +525,8 @@ var airports = [
   });
 
   $(".ticket button").on("click", function(evt) {
-    var $button = $(evt.currentTarget);
-    var $loader = $(".loader").show();
+    let $button = $(evt.currentTarget);
+    let $loader = $(".loader").show();
     $button.text("Booking...");
 
     setTimeout(() => {
@@ -538,15 +538,15 @@ var airports = [
 
   // Select Flight
   $(".list").on("click", "article", function(evt) {
-    var index = parseInt(evt.currentTarget.getAttribute("data-index")),
+    let index = parseInt(evt.currentTarget.getAttribute("data-index")),
       flight = flights[index];
 
-    var [from, t1, to, t2] = flight.nodes[0].split(" ");
+    let [from, t1, to, t2] = flight.nodes[0].split(" ");
 
-    var p = $(".radio.passengers label span"),
+    let p = $(".radio.passengers label span"),
       peopleTotal = 0,
       people = _.map(p, function(el, i) {
-        var v = parseInt(el.textContent),
+        let v = parseInt(el.textContent),
           str = "";
 
         if (i == 0 && v) str = `${v} Adults`;
@@ -561,15 +561,15 @@ var airports = [
     from = $(".fromPlace span").text();
     to = $(".toPlace span").text();
 
-    var time1 = new Date(t1),
+    let time1 = new Date(t1),
       time2 = new Date(t2);
 
-    var clase = $('input[name="seat"]:checked').val(),
+    let clase = $('input[name="seat"]:checked').val(),
       dates = $(".dateinput .control-item span"),
       place1 = _.findWhere(airports, { IATA: from }),
       place2 = _.findWhere(airports, { IATA: to });
 
-    var flightRender = `
+    let flightRender = `
 			<div class="title">
 				<div>
 					<small>${time1.toLocaleTimeString().replace(":00", "")}</small>
@@ -623,15 +623,15 @@ var airports = [
   $(".nano").nanoScroller();
 
   function doFlightsRender(isInit) {
-    var flightsRender = _.map(flights, function(o, i) {
-      var sumText = "";
-      var [from, t1, to, t2] = o.nodes[0].split(" ");
+    let flightsRender = _.map(flights, function(o, i) {
+      let sumText = "";
+      let [from, t1, to, t2] = o.nodes[0].split(" ");
 
-      var d1 = new Date(t1),
+      let d1 = new Date(t1),
         d2 = new Date(t2);
 
       if (!isInit) {
-        var ppl = $(".radio.passengers label span"),
+        let ppl = $(".radio.passengers label span"),
           sum =
             parseInt(ppl.eq(0).text()) +
             parseInt(ppl.eq(1).text()) +
@@ -642,7 +642,7 @@ var airports = [
         to = $(".toPlace span").text();
       }
 
-      var img;
+      let img;
       if (o.carrier == "KL")
         img = "https://dl.dropbox.com/s/02ve5kn75rpo0s3/KL.png";
       else if (o.carrier == "BA")

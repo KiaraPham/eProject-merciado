@@ -197,6 +197,7 @@ a {
 /* main content*/
 
 .main-content {
+    background-color: white;
     z-index: 0;
     top: 0;
     width: 100%;
@@ -364,8 +365,9 @@ a {
 /* Restaurant homepage */
 .title-homepage {
     text-align: center;
-    font-size: 70px;
-    color: #018639;
+    font-size: 55px;
+    color: #07c;
+    font-family: Jazz LET, fantasy;
 }
 
 .pbNestedWrapper {
@@ -493,6 +495,9 @@ footer iframe {
     width: 32px;
 }
 
+.bold-text {
+    font-weight: bolder;
+}
 /* Contact tab - right side*/
 .pbMainArea {
     overflow: hidden;
@@ -528,6 +533,7 @@ footer iframe {
 }
 
 .heading1 {
+    font-family: Jazz LET, fantasy;
     font-size: 225%;
     line-height: 1.222;
     color: #07c;
@@ -536,6 +542,7 @@ footer iframe {
     margin: 0 auto 25px;
     padding-left: 80px;
     padding-right: 80px;
+    font-weight: bold;
 }
 
 .layout-column2 {
@@ -870,3 +877,4 @@ body {
 }
 
 /* ticket tab */
+
