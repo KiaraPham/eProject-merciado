@@ -1,74 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
 
 </head>
 <body>
 <div id="header"></div>
 
 <div id="mainArea" class=" main-content pbMainArea">
-    <div id="area0" class="pbArea ">
-        <div class="pbNested ">
-            <div class="pbNested pbNestedWrapper " id="pbBlock1874139">
-                <div class="pageTitle"><h1 class="heading1">Park Tickets</h1></div>
-            </div>
-            <div class="row" id="contact-form">
-                <div class="container mt-5">
+  <div id="area0" class="pbArea ">
+    <div class="pbNested ">
+      <div class="pbNested pbNestedWrapper " id="pbBlock1874139">
+        <div class="pageTitle"><h1 class="heading1">Park Tickets</h1></div>
+      </div>
+      <div class="row" id="contact-form">
+        <div class="container mt-5">
 
-                    <div class="row" style="height:550px;">
-                        <div class="col-md-6 maps">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Child(4-11)</th>
-                                    <th>Junior(12-17)</th>
-                                    <th>Adult(18+)</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">Weekday Pack</th>
-                                    <td>$15</td>
-                                    <td>$20</td>
-                                    <td>$30</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Weekend Pack</th>
-                                    <td>$20</td>
-                                    <td>$25</td>
-                                    <td>$35</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Family Pack</th>
-                                    <td>$17</td>
-                                    <td>$22</td>
-                                    <td>$32</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            table here
+          <div class="row" style="height:550px;" data-sticky_parent>
 
+              <div class="col-md-5 maps">
+                <table class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th>Child(4-11)</th>
+                    <th>Junior(12-17)</th>
+                    <th>Adult(18+)</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <th scope="row">Weekday Pack</th>
+                    <td>$15</td>
+                    <td>$20</td>
+                    <td>$30</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Weekend Pack</th>
+                    <td>$20</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Family Pack</th>
+                    <td>$17</td>
+                    <td>$22</td>
+                    <td>$32</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
 
-                        </div>
+            <div class="col-md-7">
+              <div>
+                <div>Purchase Ticket Online</div>
+                <div>
+                  <div class="stepwizard">
+                    <div class="stepwizard-row setup-panel">
+                      <div class="stepwizard-step">
+                        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                        <p>Ticket Information</p>
+                      </div>
+                      <div class="stepwizard-step">
+                        <a href="#step-2" type="button" class="btn btn-default btn-circle"
+                           disabled="disabled">2</a>
+                        <p>Personal Information</p>
+                      </div>
+                      <div class="stepwizard-step">
+                        <a href="#step-3" type="button" class="btn btn-default btn-circle"
+                           disabled="disabled">3</a>
+                        <p>Confirm Information</p>
+                      </div>
                     </div>
+                  </div>
+                  <form role="form">
+                    <div class="row setup-content" id="step-1">
+                      <div class="col-xs-12">
+                        <div class="col-md-12">
+                          <h3>Ticket Information</h3>
+                          <div class="form-group">
+                            <label class="control-label">Package Type</label>
+                            <select required="required" class="form-control"
+                                    id="package-type">
+                              <option>Weekday Pack</option>
+                              <option>Weekend Pack</option>
+                              <option>Family Pack</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Date</label>
+                            <input maxlength="100" type="date" required="required"
+                                   id="date-input"
+                                   class="form-control"/>
+                          </div>
+                          <div>
+                            <p>Number of tickets</p>
+                            <div class="form-group">
+                              <label class="control-label">Child (4-11)</label>
+                              <input type="number" class="form-control" id="child-input"/>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Junior (12-17)</label>
+                              <input type="number" class="form-control"
+                                     id="junior-input"/>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Adults (18+)</label>
+                              <input type="number" class="form-control" id="adult-input"/>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary nextBtn btn-lg pull-right"
+                                  type="button">Next
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row setup-content" id="step-2">
+                      <div class="col-xs-12">
+                        <div class="col-md-12">
+                          <h3>Personal Information</h3>
+                          <div class="form-group">
+                            <label class="control-label">First Name</label>
+                            <input maxlength="200" type="text" required="required"
+                                   class="form-control"
+                                   id="first-name-input"
+                                   placeholder="Enter Your First Name"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Last Name</label>
+                            <input maxlength="200" type="text" required="required"
+                                   id="last-name-input"
+                                   class="form-control" placeholder="Enter Your Last Name"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Address</label>
+                            <input maxlength="200" type="text" required="required"
+                                   id="address-input"
+                                   class="form-control" placeholder="Enter Your Address"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input maxlength="200" type="email" required="required"
+                                   id="email-input"
+                                   class="form-control" placeholder="Enter Your Email"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Phone Number</label>
+                            <input maxlength="200" type="text" required="required"
+                                   class="form-control"
+                                   id="phone-input"
+                                   placeholder="Enter Your Phone Number"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Credit Card Number</label>
+                            <input maxlength="200" type="text" required="required"
+                                   class="form-control"
+                                   placeholder="Enter Your Credit Card Number e.g = xxxx-xxxx-xxxx-xxxx"/>
+
+                            <input required="" type="radio" name="card" checked>
+                            <img src="../images/ticket/mastercard.jpeg" height="30"
+                                 width="50"/>
+                            <input required="" type="radio" name="card">
+                            <img src="../images/ticket/visa.png" width="50" height="30">
+                            <input required="" type="radio" name="card">
+                            <img src="../images/ticket/paypal.png" width="50" height="30">
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Pin Code</label>
+                            <input maxlength="200" type="number" required="required"
+                                   class="form-control"
+                                   placeholder="Enter Your Pin Code"/>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Zip Code</label>
+                            <input maxlength="200" type="text" required="required"
+                                   class="form-control"
+                                   placeholder="Enter Your Zip Code"/>
+                          </div>
+                          <div class="pull-right">
+                            <button class="btn btn-default nextBtn btn-lg"
+                                    type="button">Back
+                            </button>
+                            <button class="btn btn-primary nextBtn btn-lg"
+                                    type="button">Next
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row setup-content" id="step-3">
+                      <div class="col-xs-12">
+                        <div class="col-md-12">
+                          <h3>Confirm Information</h3>
+                          <form>
+                            <div class="form-group">
+                              <label class="control-label">First Name: </label>
+                              <span id="first-name-display">First Name</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Last Name: </label>
+                              <span id="last-name-display">Last Name</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Address: </label>
+                              <span id="address-display">Ho Chi Minh City</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Email: </label>
+                              <span id="email-display">name@gmail.com</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Phone Number: </label>
+                              <span id="phone-display">09x.000.xxx</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Package Type: </label>
+                              <span id="package-display">Weekend Pack</span>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label">Date: </label>
+                              <span id="date-display">02/02/2019</span>
+                            </div>
+                            <div>
+                              <p>Number of tickets</p>
+                              <div class="form-group">
+                                <label class="control-label">Child (4-11): </label>
+                                <span id="child-display">1</span>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Junior (12-17): </label>
+                                <span id="junior-display">2</span>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Adults (18+): </label>
+                                <span id="adult-display">3</span>
+                              </div>
+
+                              <div class="container">
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg"
+                                        data-toggle="modal" data-target="#myModal">Book Now!
+                                </button>
+                                <!-- Modal -->
+
+                              </div>
+
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+
 </div>
 
 <div id="footer"></div>
 
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal">&times;
+        </button>
+        <h4 class="modal-title">Merciado Announcement</h4>
+      </div>
+      <div class="modal-body">
+        <p>Purchase Ticket Successfully! Thank you!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 <script>
   $(function () {
     $("#header").load("header.html");
