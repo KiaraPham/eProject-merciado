@@ -22,7 +22,7 @@
 
           <div class="row" style="height:550px;" data-sticky_parent>
 
-            <div class="col-md-5 maps">
+            <div class="col-md-5 maps ">
               <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -128,45 +128,45 @@
                     <h3 class="panel-title">Personal Information</h3>
                   </div>
                   <div class="panel-body">
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*First Name</label>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              id="first-name-input"
                              placeholder="Enter Your First Name"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*Last Name</label>
                       <input maxlength="200" type="text" required="required"
                              id="last-name-input"
                              class="form-control" placeholder="Enter Your Last Name"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-12">
                       <label class="control-label">Address</label>
                       <input maxlength="200" type="text" required="required"
                              id="address-input"
                              class="form-control" placeholder="Enter Your Address"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*Email</label>
                       <input maxlength="200" type="email" required="required"
                              id="email-input"
                              class="form-control" placeholder="Enter Your Email"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*Phone Number</label>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              id="phone-input"
                              placeholder="Enter Your Phone Number"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-12">
                       <label class="control-label">*Credit Card Number</label>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              placeholder="Enter Your Credit Card Number e.g = xxxx-xxxx-xxxx-xxxx"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-12">
                       <label class="control-label">Credit Card Type</label>
                       <input required="" type="radio" name="card" checked>
                       <img src="../images/ticket/mastercard.jpeg" height="30"
@@ -176,13 +176,13 @@
                       <input required="" type="radio" name="card">
                       <img src="../images/ticket/paypal.png" width="50" height="30">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*Pin Code</label>
                       <input maxlength="200" type="number" required="required"
                              class="form-control"
                              placeholder="Enter Your Pin Code"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">*Zip Code</label>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
@@ -202,59 +202,60 @@
                     <h3 class="panel-title">Confirm Information</h3>
                   </div>
                   <div class="panel-body">
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">First Name: </label>
                       <span id="first-name-display">First Name</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">Last Name: </label>
                       <span id="last-name-display">Last Name</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-12">
                       <label class="control-label">Address: </label>
                       <span id="address-display">Ho Chi Minh City</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">Email: </label>
                       <span id="email-display">name@gmail.com</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">Phone Number: </label>
                       <span id="phone-display">09x.000.xxx</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">Package Type: </label>
                       <span id="package-display">Weekend Pack</span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                       <label class="control-label">Date: </label>
                       <span id="date-display">02/02/2019</span>
                     </div>
                     <div>
-                      <p>Number of tickets</p>
-                      <div class="form-group">
-                        <label class="control-label">Child (4-11): </label>
+                      <div class="form-group col-md-12">
+                        <label class="control-label">Number of Child Tickets (4-11): </label>
                         <span id="child-display">1</span>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label">Junior (12-17): </label>
+                      <div class="form-group col-md-12">
+                        <label class="control-label">Number of Junior Tickets (12-17): </label>
                         <span id="junior-display">2</span>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label">Adults (18+): </label>
+                      <div class="form-group col-md-12">
+                        <label class="control-label"> Number of Adults Tickets (18+): </label>
                         <span id="adult-display">3</span>
                       </div>
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="control-label">Total Price: </label>
                         <span id="price-display">177</span>
                       </div>
 
-                      <div class="container">
-                        <!-- Trigger the modal with a button -->
-                        <button type="button" class="btn btn-info btn-lg"
-                                data-toggle="modal" data-target="#myModal">Book Now!
-                        </button>
-                        <!-- Modal -->
+                      <div class="pull-right">
+                        <div class="wrap" data-pos="0">
+                          <!-- Trigger the modal with a button -->
+                          <button type="button" class="btn btn-info btn-lg"
+                                  data-toggle="modal" data-target="#myModal">Book Now!
+                          </button>
+                          <!-- Modal -->
+                        </div>
                       </div>
                     </div>
                   </div>

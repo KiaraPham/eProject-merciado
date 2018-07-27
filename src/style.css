@@ -242,6 +242,8 @@ a {
     width: 100%;
 }
 
+
+
 .slide:first-child {
     display: block;
 }
@@ -873,10 +875,27 @@ body {
 }
 
 /* ticket tab */
+table.table-bordered {
+    border: 1px solid #337ab7;
+}
+
+table.table-bordered > thead > tr > th {
+    border: 1px solid #337ab7;
+}
+
+table.table-bordered > tbody > tr > td {
+    border: 1px solid #337ab7;
+}
+
+table.table-bordered > tbody > tr > th {
+    border: 1px solid #337ab7;
+}
+
 .error {
     color: crimson;
     font-style: italic;
 }
+
 .table {
     margin-top: 150px;
 }
@@ -931,4 +950,42 @@ body {
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
+}
+
+/* attraction */
+#slide-attraction {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+/*entertainment*/
+#indoor
+{
+    padding-left:3%;
+    padding-right:5px
+}
+#indoorbtn
+{
+    background-color:#337ab7;
+    color:white;
+}
+#indoorbtn:hover
+{
+    color:white;
+    background-color:#337ab7;
+}
+#ridecanvas
+{
+    padding-left:45%;
+}
+#outcanvas
+{
+    padding-left:35%;
+}
+.circus, .elephant, .pirateship, .kidsparadise, .karaoke, .project
+{
+    padding-left:10%;
+    max-width: 1000px;
+
 }

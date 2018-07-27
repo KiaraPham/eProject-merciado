@@ -112,7 +112,7 @@ $(function () {
 });
 // contact
 
-// ticket
+// Ticket Tab
 
 const showConfirmInfo = () => {
   const bookingInfo = {};
@@ -195,6 +195,8 @@ $(document).ready(function () {
     }
   });
 
+// Next Button
+
   allNextBtn.click(function () {
     let curStep = $(this).closest(".setup-content");
     let curStepBtn = curStep.attr("id");
@@ -232,7 +234,6 @@ $(document).ready(function () {
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
-
 
 //faq
 // Add smooth scrolling to all links
