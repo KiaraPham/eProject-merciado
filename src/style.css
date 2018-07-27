@@ -242,8 +242,6 @@ a {
     width: 100%;
 }
 
-
-
 .slide:first-child {
     display: block;
 }
@@ -959,33 +957,533 @@ table.table-bordered > tbody > tr > th {
     position: absolute;
     width: 100%;
 }
+
 /*entertainment*/
-#indoor
-{
-    padding-left:3%;
-    padding-right:5px
+#indoor {
+    padding-left: 3%;
+    padding-right: 5px
 }
-#indoorbtn
-{
-    background-color:#337ab7;
-    color:white;
+
+#indoorbtn {
+    background-color: #337ab7;
+    color: white;
 }
-#indoorbtn:hover
-{
-    color:white;
-    background-color:#337ab7;
+
+#indoorbtn:hover {
+    color: white;
+    background-color: #337ab7;
 }
-#ridecanvas
-{
-    padding-left:45%;
+
+#ridecanvas {
+    padding-left: 45%;
 }
-#outcanvas
-{
-    padding-left:35%;
+
+#outcanvas {
+    padding-left: 35%;
 }
-.circus, .elephant, .pirateship, .kidsparadise, .karaoke, .project
-{
-    padding-left:10%;
+
+.circus, .elephant, .pirateship, .kidsparadise, .karaoke, .project {
+    padding-left: 10%;
     max-width: 1000px;
 
 }
+
+/* gallery */
+
+.row > .column {
+    padding: 0 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 950px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev1,
+.next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* restaurant */
+
+.text-orange { color: #F71735; }
+.black-bg { background: #1e2327; }
+
+
+.carousel-inner img {
+    /*-webkit-filter: grayscale(90%);*/
+    /*filter: grayscale(90%);  make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+/* ================= End Slide ================= */
+
+/* ================= Chef ================= */
+.right-img {
+    padding-right: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-180 {
+    margin-top: 180px !important;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* ================= End Chef ================= */
+
+/* ================= Menu ================= */
+.our-menu.dark {
+    color: #ffffff;
+    position: relative;
+}
+
+.our-menu {
+    padding: 0;
+    font-size: 13px;
+    position: relative;
+    z-index: 99;
+}
+
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+/*our-menu dark*/
+.our-menu.dark .menu-body.menu-white .menu-title h4, .our-menu.dark .menu-body.menu-white p {
+    color: #ffffff;
+}
+
+.our-menu .menu-body {
+    margin-bottom: 50px;
+}
+
+.our-menu.middle-img .menu-body:last-child {
+    margin-bottom: 80px;
+}
+
+.belief {
+    position: relative;
+}
+
+.our-menu {
+    position: relative;
+}
+/*
+.our-menu.belief .container-fuild {
+    padding: 0 50px;
+}
+*/
+
+.centre-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-menu .menu-body .menu-thumbnail img {
+    width: 150px;
+    height: 100%;
+}
+
+.our-menu .middle-image {
+    position: relative;
+    height: 100%;
+}
+
+.our-menu .middle-image img {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.light {
+    position: relative;
+}
+
+/*menu default*/
+.menu-body {
+    text-align: center;
+}
+
+.menu-body .menu-thumbnail img {
+    width: 100px;
+    height: 100%;
+}
+
+.menu-body .menu-thumbnail {
+    margin-bottom: 25px;
+}
+
+.menu-body .menu-title {
+    margin-bottom: 20px;
+}
+
+.menu-body .menu-title h4 {
+    color: #fff;
+}
+
+.menu-body .menu-details .price {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.menu-body p {
+    color: #fff;
+}
+
+/*menu whitebg*/
+.menu-body.menu-white .menu-title h4, .menu-body.menu-white p {
+    color: #1e2327;
+}
+
+/*menu left*/
+.menu-body.menu-left {
+    text-align: left;
+}
+
+.menu-body.menu-left .menu-thumbnail {
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.menu-body.menu-left .menu-details {
+    display: table-cell;
+}
+
+.menu-body.menu-left .menu-title {
+    display: block;
+    border-bottom: 1px dashed #909090;
+    padding-bottom: 10px;
+}
+
+.menu-body.menu-left .menu-title h4 {
+    display: inline-block;
+}
+
+.menu-body.menu-left .menu-details .price {
+    float: right;
+    color: #ffffff;
+}
+
+/*menu right*/
+.menu-body.menu-right .menu-thumbnail {
+    float: right;
+    margin-right: 0px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.menu-body.menu-right .menu-details {
+    display: table-cell;
+}
+
+.menu-body.menu-right .menu-title {
+    display: block;
+    border-bottom: 2px dotted #909090;
+    padding-bottom: 10px;
+}
+
+.menu-body.menu-right .menu-details .price {
+    float: left;
+}
+
+.menu-body.menu-right .menu-title h4 {
+    float: right;
+}
+
+.menu-body.menu-right .menu-description {
+    text-align: right;
+}
+
+.menu-body.menu-left.simple .menu-details {
+    width: 100%;
+    display: table;
+}
+
+.menu-body.menu-left.simple .menu-title {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.menu-body.menu-left.simple .menu-title span {
+    font-size: 22px;
+}
+
+.menu-body.menu-left.simple .menu-description p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* ================= End Menu ================= */
+
+/* ================= Team ================= */
+.our-team {
+    background-position: center bottom;
+}
+
+.page-section-pt {
+    padding: 80px 0 0;
+}
+
+/***** Section title *****/
+.section-title {
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.section-title h2:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #F71735;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0px;
+}
+
+.section-title p {
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.section-title i {
+    font-size: 35px;
+    color: #9d9d9d;
+    line-height: 35px;
+}
+
+.section-title i.white {
+    color: #ffffff;
+}
+
+.section-title .title-separator {
+    position: relative;
+}
+
+.section-title .title-separator .separator-left {
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    margin-left: -198px;
+}
+
+.section-title .title-separator .separator-left:after {
+    content: "";
+    background: #dbdbdb;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 0px;
+}
+
+.section-title .title-separator .separator-left:before {
+    content: "";
+    background: #dbdbdb;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.section-title .title-separator .separator-right {
+    position: absolute;
+    right: 50%;
+    top: 18px;
+    margin-right: -40px;
+}
+
+.section-title .title-separator .separator-right:after {
+    content: "";
+    background: #dbdbdb;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.section-title .title-separator .separator-right:before {
+    content: "";
+    background: #dbdbdb;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 5px;
+}
+
+/* ================= End Team ================= */
+
+/* ================= Event ================= */
+.our-blog {
+    position: relative;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #8d8d8d;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #F71735;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus .btn:active {
+    border: 1px solid #F71735;
+    background-color: #fff;
+    color: #F71735;
+}
+
+/* ================= End Event ================= */
