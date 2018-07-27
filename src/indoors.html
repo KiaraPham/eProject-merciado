@@ -52,7 +52,7 @@
   <div class="container">
     <br>
     <br>
-    <canvas id = "outcanvas" width="490px" height="100px" ></canvas>
+    <canvas id="outcanvas" width="490px" height="100px"></canvas>
     <script>
       var canva = document.getElementById("outcanvas");
       var canvastext = canva.getContext("2d");
@@ -61,32 +61,45 @@
       canvastext.shadowOffsetY = 3;
       canvastext.shadowColor = "rgba(0,0,0,0.4)";
       canvastext.shadowBlur = 4;
-      canvastext.fillText("INDOOR ACTIVITIES",10,50);
+      canvastext.fillText("INDOOR ACTIVITIES", 10, 50);
     </script>
 
-    <div class = "kidsparadise">
-      <h3 class ="bold-text"><i>Kid's Paradise</i></h3>
-      <p>Nothing quite matches up to kids having fun, laughing, and letting their imagination run free! That's exactly what you'll get to see with exciting toys.</p>
-      <img src = "../images/entertainment/paradise.jpg" width="900px" height="400px">
-    </div><br>
+    <div class="kidsparadise">
+      <h3 class="entertainment-title"><a><span>Kid's Paradise</span></a></h3>
+      <p>Nothing quite matches up to kids having fun, laughing, and letting their imagination run free! That's exactly
+        what you'll get to see with exciting toys.</p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/IWXtQCtLC5E"></iframe>
+      </div>
+    </div>
+    <br>
 
-    <div class = "karaoke">
-      <h3 class ="bold-text"><i>Karaoke Room</i></h3>
-      <p>Karaoke rooms with modern audio equipment will be the stage for you and your family members to show singing and performing talents. Songs with different styles not only bringyou relaxation to show your emotions but also is the sentimental voice connecting souls.</p>
-      <img src = "../images/entertainment/karaoke.jpg" width = "900px" height="400px">
-    </div><br>
+    <div class="karaoke">
+      <h3 class="entertainment-title"><a><span>Karaoke Room</span></a></h3>
+      <p>Karaoke rooms with modern audio equipment will be the stage for you and your family members to show singing and
+        performing talents. Songs with different styles not only bringyou relaxation to show your emotions but also is
+        the sentimental voice connecting souls.</p>
+      <img src="../images/entertainment/karaoke.jpg" width="900px" height="400px">
+    </div>
+    <br>
 
-    <div class = "project">
-      <h3 class ="bold-text"><i>4D Projection Room
-      </i></h3>
-      <p>4D movie is an entertainment system combining 3D movies with real effects right inside the Projection Room such as rain, wind, snow, light, smoke, tough movements of shaking, falling, earthquake, heat/warmth or even water flush, air flow or smell.</p>
-      <img src = "../images/entertainment/4dproject.jpg" width="900px" height="400px">
-    </div><br>
+    <div class="project">
+      <h3 class="entertainment-title"><a><span>4D Projection Room
+      </span></a></h3>
+      <p>4D movie is an entertainment system combining 3D movies with real effects right inside the Projection Room such
+        as rain, wind, snow, light, smoke, tough movements of shaking, falling, earthquake, heat/warmth or even water
+        flush, air flow or smell.</p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/FN03zZRHSHA"></iframe>
+      </div>
+    </div>
+    <br>
   </div>
 </div>
 
 
-<br><div id="footer"></div>
+<br>
+<div id="footer"></div>
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>

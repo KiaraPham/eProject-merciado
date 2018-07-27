@@ -13,6 +13,62 @@ html, body {
 .text-center {
     text-align: center;
 }
+/* Title for each tab */
+/* Attraction */
+.attraction-title {
+    font-weight: 600;
+    font-family: Apple Chancery, cursive;
+    position:relative;
+    font-size: 35px;
+}
+.attraction-title a {
+    color: #92670b;
+    text-decoration: none;
+}
+.attraction-title a span:before {
+    content: "\f522";
+    font-family: "Font Awesome 5 Free";
+    left:-5px;
+    top:0;
+    margin-right: 10px;
+    font-size: 50px;
+    color: #92670b;
+}
+
+/* Entertainment */
+
+.entertainment-title {
+    font-weight: 600;
+    font-family: Apple Chancery, cursive;
+    position:relative;
+    font-size: 35px;
+}
+.entertainment-title a {
+    color: #007d9b;
+    text-decoration: none;
+}
+.entertainment-title a span:before {
+    content: "\f522";
+    font-family: "Font Awesome 5 Free";
+    left:-5px;
+    top:0;
+    margin-right: 10px;
+    font-size: 50px;
+    color: #007d9b;
+}
+
+/* Restaurant */
+
+.restaurant-title {
+    font-weight: 600;
+    font-family: Apple Chancery, cursive;
+    position:relative;
+    font-size: 35px;
+}
+.restaurant-title a {
+    color: #018639;
+    text-decoration: none;
+}
 
 /* header - top */
 #header {
@@ -963,7 +1019,7 @@ table.table-bordered > tbody > tr > th {
     padding-left: 3%;
     padding-right: 5px
 }
-
+/*
 #indoorbtn {
     background-color: #337ab7;
     color: white;
@@ -973,7 +1029,7 @@ table.table-bordered > tbody > tr > th {
     color: white;
     background-color: #337ab7;
 }
-
+*/
 #ridecanvas {
     padding-left: 45%;
 }
@@ -1118,7 +1174,7 @@ img.hover-shadow {
 
 /* restaurant */
 
-.text-orange { color: #F71735; }
+ /*.text-orange { color: #F71735; }*/
 .black-bg { background: #1e2327; }
 
 
@@ -1370,16 +1426,6 @@ img.hover-shadow {
     margin-bottom: 10px;
 }
 
-.section-title h2:before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 2px;
-    background: #F71735;
-    left: 50%;
-    margin-left: -20px;
-    bottom: 0px;
-}
 
 .section-title p {
     font-style: italic;
@@ -1387,16 +1433,6 @@ img.hover-shadow {
     display: block;
     margin-top: 10px;
     margin-bottom: 0px;
-}
-
-.section-title i {
-    font-size: 35px;
-    color: #9d9d9d;
-    line-height: 35px;
-}
-
-.section-title i.white {
-    color: #ffffff;
 }
 
 .section-title .title-separator {
@@ -1471,7 +1507,7 @@ img.hover-shadow {
     margin-top: 15px;
     color: #8d8d8d;
 }
-
+/*
 .btn {
     padding: 10px 20px;
     background-color: #F71735;
@@ -1485,5 +1521,6 @@ img.hover-shadow {
     background-color: #fff;
     color: #F71735;
 }
+*/
 
 /* ================= End Event ================= */
