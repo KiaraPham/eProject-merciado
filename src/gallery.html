@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
-
+  <link rel="stylesheet" href="../node_modules/simple-lightbox/dist/simpleLightbox.css">
+  <link rel="stylesheet" href="../css/demo.css">
 </head>
 <body>
 <div id="header"></div>
@@ -59,187 +60,42 @@
     </div>
   </div>
   <!-- ================= Gallery ================= -->
-  <div class="container bg-3 text-center">
-    <h2 style="color:#F71735 ;font-size: 50px; padding-bottom: 15px; font-weight: 700; position: relative; font-family: Apple Chancery, cursive">
-      Love every moment</h2>
-    <div class="row row-margin">
-      <div class="column col-md-3">
-        <img src="../images/gallery/i1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
-             class="hover-shadow cursor">
-      </div>
-    </div>
-  </div>
+  <div class="container row-margin">
+    <h3 class="gallery-title"><a><span></span>Love every moment</a></h3>
+    <div class="gallery">
 
-  <div class="container bg-3 text-center">
-    <div class="row row-margin">
-      <div class="column col-md-3">
-        <img src="../images/gallery/i5.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i6.jpg" style="width:100%" onclick="openModal();currentSlide(6)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i7.jpg" style="width:100%" onclick="openModal();currentSlide(7)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i8.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
-             class="hover-shadow cursor">
-      </div>
-    </div>
-  </div>
+      <a href="../images/gallery/i1.jpg" class="big"><img src="../images/gallery/thumbs/i1.jpg" alt=""
+                                                          title="Beautiful Image"/></a>
+      <a href="../images/gallery/i2.jpg"><img src="../images/gallery/thumbs/i2.jpg" alt="" title=""/></a>
+      <a href="../images/gallery/i3.jpg"><img src="../images/gallery/thumbs/i3.jpg" alt=""
+                                              title="Beautiful Image"/></a>
+      <a href="../images/gallery/i4.jpg"><img src="../images/gallery/thumbs/i4.jpg" alt="" title=""/></a>
+      <div class="clear"></div>
 
-  <div class="container bg-3 text-center">
-    <div class="row row-margin">
-      <div class="column col-md-3">
-        <img src="../images/gallery/i9.jpg" style="width:100%" onclick="openModal();currentSlide(9)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i10.jpg" style="width:100%" onclick="openModal();currentSlide(10)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i11.jpg" style="width:100%" onclick="openModal();currentSlide(11)"
-             class="hover-shadow cursor">
-      </div>
-      <div class="column col-md-3">
-        <img src="../images/gallery/i12.jpg" style="width:100%" onclick="openModal();currentSlide(12)"
-             class="hover-shadow cursor">
-      </div>
-    </div>
-  </div>
+      <a href="../images/gallery/i5.jpg"><img src="../images/gallery/thumbs/i5.jpg" alt="" title=""/></a>
+      <a href="../images/gallery/i7.jpg"><img src="../images/gallery/thumbs/i7.jpg" alt=""
+                                              title=""/></a>
+      <a href="../images/gallery/i6.jpg" class="big"><img src="../images/gallery/thumbs/i6.jpg" alt="" title=""/></a>
 
-  <!---->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
+      <a href="../images/gallery/i8.jpg"><img src="../images/gallery/thumbs/i8.jpg" alt="" title=""/></a>
+      <div class="clear"></div>
 
-      <div class="mySlides">
-        <div class="numbertext">1 / 12</div>
-        <img src="../images/gallery/i1.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 12</div>
-        <img src="../images/gallery/i2.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 12</div>
-        <img src="../images/gallery/i3.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 12</div>
-        <img src="../images/gallery/i4.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">5 / 12</div>
-        <img src="../images/gallery/i5.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">6 / 12</div>
-        <img src="../images/gallery/i6.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">7 / 12</div>
-        <img src="../images/gallery/i7.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">8 / 12</div>
-        <img src="../images/gallery/i8.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">9 / 12</div>
-        <img src="../images/gallery/i9.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">10 / 12</div>
-        <img src="../images/gallery/i10.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">11 / 12</div>
-        <img src="../images/gallery/i11.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">12 / 12</div>
-        <img src="../images/gallery/i12.jpg" style="width:100%">
-      </div>
-
-      <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+      <a href="../images/gallery/i10.jpg" class="big"><img src="../images/gallery/thumbs/i10.jpg" alt="" title=""/></a>
+      <a href="../images/gallery/i9.jpg"><img src="../images/gallery/thumbs/i9.jpg" alt="" title=""/></a>
+      <a href="../images/gallery/i11.jpg"><img src="../images/gallery/thumbs/i11.jpg" alt=""
+                                               title=""/></a>
+      <a href="../images/gallery/i12.jpg"><img src="../images/gallery/thumbs/i12.jpg" alt="" title=""/></a>
+      <div class="clear"></div>
 
     </div>
   </div>
+</div>
 
-  <!-- ================= script ================= -->
-  <script>
-    function openModal() {
-      document.getElementById('myModal').style.display = "block";
-    }
 
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-    }
+<!-- ================= script ================= -->
 
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      /*var captionText = document.getElementById("caption");*/
-      if (n > slides.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-  </script>
-
-  <!-- ================= Footer ================= -->
+<!-- ================= Footer ================= -->
 </div>
 
 <div id="footer"></div>
@@ -249,6 +105,53 @@
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/simple-lightbox/dist/simpleLightbox.js"></script>
+<script>
+  $(function () {
+    var $gallery = $('.gallery a').simpleLightbox();
+
+    $gallery.on('show.simplelightbox', function () {
+      console.log('Requested for showing');
+    })
+      .on('shown.simplelightbox', function () {
+        console.log('Shown');
+      })
+      .on('close.simplelightbox', function () {
+        console.log('Requested for closing');
+      })
+      .on('closed.simplelightbox', function () {
+        console.log('Closed');
+      })
+      .on('change.simplelightbox', function () {
+        console.log('Requested for change');
+      })
+      .on('next.simplelightbox', function () {
+        console.log('Requested for next');
+      })
+      .on('prev.simplelightbox', function () {
+        console.log('Requested for prev');
+      })
+      .on('nextImageLoaded.simplelightbox', function () {
+        console.log('Next image loaded');
+      })
+      .on('prevImageLoaded.simplelightbox', function () {
+        console.log('Prev image loaded');
+      })
+      .on('changed.simplelightbox', function () {
+        console.log('Image changed');
+      })
+      .on('nextDone.simplelightbox', function () {
+        console.log('Image changed to next');
+      })
+      .on('prevDone.simplelightbox', function () {
+        console.log('Image changed to prev');
+      })
+      .on('error.simplelightbox', function (e) {
+        console.log('No image found, go to the next/prev');
+        console.log(e);
+      });
+  });
+</script>
 <script>
   $(function () {
     $("#header").load("header.html");

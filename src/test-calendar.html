@@ -1,249 +1,98 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <title>jQuery e-calendar Plugin Demo</title>
-  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <style>
-    .calendar * {
-      box-sizing: border-box;
-      font-family: Tahoma;
-      font-size: 14px;
-    }
+  <title>Title</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
 
-    .calendar-sm {
-      cursor: default;
-      width: 800px;
-      height: 370px;
-    }
+  <link rel="stylesheet" href="../node_modules/fullcalendar/dist/fullcalendar.css">
+  <link rel="stylesheet" href="../node_modules/simple-lightbox/dist/simpleLightbox.css">
+  <link rel="stylesheet" href="../css/demo.css">
 
-    .calendar {
-      cursor: default;
-      width: 600px;
-      height: 270px;
-    }
-
-    .calendar-sm .c-pad-top {
-      padding-top: 2%;
-    }
-
-    .calendar .c-pad-top {
-      padding-top: 3%;
-    }
-
-    .c-grid {
-      box-shadow: 2px 2px 5px #888888;
-      height: inherit;
-    }
-
-    .c-day {
-      width: 14.28%;
-      height: 13%;
-      background-color: #EFF4F9;
-      float: left;
-      text-align: center;
-    }
-
-    .c-day-previous-month {
-      width: 14.28%;
-      height: 13%;
-      background-color: #F9FBFD;
-      float: left;
-      text-align: center;
-      color: gray;
-    }
-
-    .c-day-next-month {
-      width: 14.28%;
-      height: 13%;
-      background-color: #F9FBFD;
-      float: left;
-      text-align: center;
-      color: gray;
-    }
-
-    .c-week-day {
-      width: 14.28%;
-      height: 10.38%;
-      background-color: rgb(145, 172, 203);
-      color: white;
-      float: left;
-      text-align: center;
-      font-weight: bold;
-      padding-top: 1%;
-    }
-
-    .c-next {
-      width: 12.5%;
-      height: 12%;
-      padding: 2% 2% 0 2%;
-      text-align: right;
-      cursor: pointer;
-    }
-
-    .c-previous {
-      width: 12.5%;
-      height: 12%;
-      padding: 2% 2% 0 2%;
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .c-month {
-      width: 75%;
-      height: 12%;
-      text-align: center;
-    }
-
-    .c-nav-btn-over {
-      background-color: rgb(137, 163, 192) !important;
-      font-weight: bold;
-    }
-
-    .c-today {
-      background-color: #D8EAF1;
-    }
-
-    .c-event {
-      background-color: rgb(166, 166, 166);
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .c-grid {
-      float: left;
-      width: 50%;
-    }
-
-    .c-event-grid {
-      margin-left: 1px;
-      height: inherit;
-      width: 49%;
-      float: left;
-      box-shadow: 2px 2px 5px #888888;
-    }
-
-    .c-grid-title {
-      font-weight: bold;
-      float: left;
-      background-color: rgb(112, 145, 183);
-      color: white;
-    }
-
-    .c-event-title {
-      width: 100%;
-      height: 12%;
-      text-align: center;
-      font-weight: bold;
-      background-color: rgb(135, 155, 188);
-      color: white;
-    }
-
-    .c-event-body {
-      background-color: #EFF4F9;
-      height: 88.1%;
-    }
-
-    .c-event-list {
-      padding: 7 0 0 0;
-      overflow: auto;
-      height: 95%;
-    }
-
-    .c-event-item > .title {
-      font-weight: bold;
-    }
-
-    .c-event-item > div {
-      text-overflow: ellipsis;
-      width: inherit;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .c-event-item {
-      padding-left: 10px;
-      margin-bottom: 10px;
-    }
-
-    .c-event-over {
-      background-color: lightgray;
-      font-weight: bold;
-      color: black;
-    }
-
-    .c-event-over > .description {
-      font-weight: normal;
-    }
-  </style>
-  <link rel="stylesheet" href="../node_modules/jquery-calendar/dist/css/jquery-calendar.min.css">
 </head>
 <body>
-<div id="jquery-script-menu">
-  <div class="jquery-script-center">
-    <ul>
-      <li><a href="http://www.jqueryscript.net/time-clock/Create-A-Simple-Event-Calendar-with-jQuery-e-calendar.html">Download
-        This Plugin</a></li>
-      <li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
-    </ul>
-    <div class="jquery-script-ads">
-      <script type="text/javascript"><!--
-      google_ad_client = "ca-pub-2783044520727903";
-      /* jQuery_demo */
-      google_ad_slot = "2780937993";
-      google_ad_width = 728;
-      google_ad_height = 90;
-      //-->
-      </script>
-      <script type="text/javascript"
-              src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-      </script>
-    </div>
-    <div class="jquery-script-clear"></div>
+<div id="header"></div>
+
+<div class="container">
+  <div class="gallery">
+    <a href="../image-test/images/image1.jpg" class="big"><img src="../image-test/images/thumbs/thumb1.jpg" alt="" title="Beautiful Image" /></a>
+    <a href="../image-test/images/image2.jpg"><img src="../image-test/images/thumbs/thumb2.jpg" alt="" title=""/></a>
+    <a href="../image-test/images/image3.jpg"><img src="../image-test/images/thumbs/thumb3.jpg" alt="" title="Beautiful Image"/></a>
+    <a href="../image-test/images/image4.jpg"><img src="../image-test/images/thumbs/thumb4.jpg" alt="" title=""/></a>
+    <div class="clear"></div>
+
+    <a href="../image-test/images/image5.jpg"><img src="../image-test/images/thumbs/thumb5.jpg" alt="" title=""/></a>
+    <a href="../image-test/images/image6.jpg"><img src="../image-test/images/thumbs/thumb6.jpg" alt="" title=""/></a>
+    <a href="../image-test/images/image7.jpg" class="big"><img src="../image-test/images/thumbs/thumb7.jpg" alt="" title=""/></a>
+    <a href="../image-test/images/image8.jpg"><img src="../image-test/images/thumbs/thumb8.jpg" alt="" title=""/></a>
+    <div class="clear"></div>
+
   </div>
 </div>
-<h1 style="margin-top:150px;">jQuery e-calendar Plugin Demo</h1>
-<div id="calendar"></div>
 
-<script type="text/javascript">
+<div id="footer"></div>
+<button onclick="topFunction()" id="topUpBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function () {
-    var ga = document.createElement('script');
-    ga.type = 'text/javascript';
-    ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script>
-  $(document).ready(function () {
-    $('#calendar').eCalendar({
-
-      weekDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      textArrows: {previous: '<', next: '>'},
-      eventTitle: 'Events',
-      url: '',
-      events: [
-        {title: 'Event 1', description: 'Description 1', datetime: new Date(2016, 7, 15, 17)},
-        {title: 'Event 2', description: 'Description 2', datetime: new Date(2016, 7, 14, 16)},
-        {title: 'Event 3', description: 'jQueryScript.Net', datetime: new Date(2016, 7, 10, 16)}
-      ]
-    });
-  });
-
-</script>
 <script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/moment/moment.js"></script>
+<script src="../node_modules/fullcalendar/dist/fullcalendar.js"></script>
+<script src="../node_modules/simple-lightbox/dist/simpleLightbox.js"></script>
+<script>
+  $(function(){
+    var $gallery = $('.gallery a').simpleLightbox();
 
-<script src="../node_modules/jquery-calendar/dist/js/jquery-calendar.js"></script>
+    $gallery.on('show.simplelightbox', function(){
+      console.log('Requested for showing');
+    })
+      .on('shown.simplelightbox', function(){
+        console.log('Shown');
+      })
+      .on('close.simplelightbox', function(){
+        console.log('Requested for closing');
+      })
+      .on('closed.simplelightbox', function(){
+        console.log('Closed');
+      })
+      .on('change.simplelightbox', function(){
+        console.log('Requested for change');
+      })
+      .on('next.simplelightbox', function(){
+        console.log('Requested for next');
+      })
+      .on('prev.simplelightbox', function(){
+        console.log('Requested for prev');
+      })
+      .on('nextImageLoaded.simplelightbox', function(){
+        console.log('Next image loaded');
+      })
+      .on('prevImageLoaded.simplelightbox', function(){
+        console.log('Prev image loaded');
+      })
+      .on('changed.simplelightbox', function(){
+        console.log('Image changed');
+      })
+      .on('nextDone.simplelightbox', function(){
+        console.log('Image changed to next');
+      })
+      .on('prevDone.simplelightbox', function(){
+        console.log('Image changed to prev');
+      })
+      .on('error.simplelightbox', function(e){
+        console.log('No image found, go to the next/prev');
+        console.log(e);
+      });
+  });
+</script>
+
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+<script src="script.js"></script>
 </body>
-
 </html>

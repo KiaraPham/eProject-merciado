@@ -6,190 +6,49 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
-
-  <link rel="stylesheet" href="../node_modules/fullcalendar/dist/fullcalendar.css">
+  <link rel="stylesheet" href="../thumbnail/thumbnail-slider.css">
 
 </head>
 <body>
 <div id="header"></div>
 
-<div class="main-content">
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" id="open-modal-btn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
+    Modal
+  </button>
 
-  <div class="slide-show">
-    <div class="slider">
-      <div class="slide_viewer">
-        <div class="slide_group">
-          <!-- ================= Slide ================= -->
-          <div id="myCarousel" class="carousel" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="../images/homepage/slideshow/slide1.jpg" alt="Slide 1">
-              </div>
-
-              <div class="item">
-                <img src="../images/homepage/slideshow/slide2.jpg" alt="Slide 2">
-              </div>
-
-              <div class="item">
-                <img src="../images/homepage/slideshow/slide3.jpg" alt="Slide 3">
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <!-- ================= End Slide ================= -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="linkList3">
-    <ul>
-      <li class="btn-calendar"><a href="#" style="height: 131px;">Park Operation Calendar</a></li>
-      <li class="btn-waitingtime " data-toggle="modal" data-target="#myModal">
-        <a href="#" style="height: 131px;" >Today</a>
-      </li>
-      <li class="btn-access"><a href="contact.html" style="height: 131px;">Getting Here</a></li>
-    </ul>
-  </div>
-
-  <div class="pbNested pbNestedWrapper ">
-    <p class="title-homepage">Restaurant</p>
-    <div class="linkList4">
-      <ul>
-        <li><a href="/en/tds/event" style="height: 211px;">
-          <img src="../images/restaurant/dish_1.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Appetizers</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/attraction" style="height: 211px;">
-          <img src="../images/restaurant/dish_2.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Fast Food</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/show" style="height: 211px;">
-          <img src="../images/restaurant/dish_3.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Main dishes</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/greeting" style="height: 211px;">
-          <img src="../images/restaurant/dish_4.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Desserts</span></p></div>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="pbNested pbNestedWrapper ">
-    <p class="title-homepage">Entertainment</p>
-    <div class="linkList4">
-      <ul>
-        <li><a href="/en/tds/event" style="height: 211px;">
-          <img src="../images/entertainment/4dmovie.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>4D Projection</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/attraction" style="height: 211px;">
-          <img src="../images/entertainment/bumper_car.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Bumper Cars</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/show" style="height: 211px;">
-          <img src="../images/entertainment/carousel.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Carousel</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/greeting" style="height: 211px;">
-          <img src="../images/entertainment/water_park.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Water Park</span></p></div>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="pbNested pbNestedWrapper ">
-    <p class="title-homepage">Attraction</p>
-    <div class="linkList4">
-      <ul>
-        <li><a href="/en/tds/event" style="height: 211px;">
-          <img src="../images/attraction/fantasmic.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Fantasmics!</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/attraction" style="height: 211px;">
-          <img src="../images/attraction/my_friend_show.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>My Friend Duffy</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/show" style="height: 211px;">
-          <img src="../images/attraction/new_dream.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Brand New Dream</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/greeting" style="height: 211px;">
-          <img src="../images/attraction/shadowland.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Out of Shadowland</span></p></div>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="pbNested pbNestedWrapper ">
-    <p class="title-homepage">Gallery</p>
-    <div class="linkList4">
-      <ul>
-        <li><a href="/en/tds/event" style="height: 211px;">
-          <img src="../images/gallery/center_to_earth.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3">
-            <span>Journey to the Center of the Earth</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/attraction" style="height: 211px;">
-          <img src="../images/gallery/mermaid_lagoon_theater.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Mermaid Lagoon Theater</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/show" style="height: 211px;">
-          <img src="../images/gallery/raging_spirits.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Raging Spirits</span></p></div>
-        </a></li>
-        <li><a href="/en/tds/greeting" style="height: 211px;">
-          <img src="../images/gallery/toy_story.jpg" height="172" width="305"/>
-          <div class="listTextArea"><p class="linkText heading3"><span>Toy Story</span></p></div>
-        </a></li>
-      </ul>
-    </div>
-  </div>
-
+  <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
+
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <div id='calendar'></div>
+          <div id="demo2"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
+
     </div>
   </div>
+
 </div>
+
 <div id="footer"></div>
 <button onclick="topFunction()" id="topUpBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script src="../node_modules/moment/moment.js"></script>
-<script src="../node_modules/fullcalendar/dist/fullcalendar.js"></script>
+<script src="../thumbnail/thumbnail-slider.js"></script>
+
 
 <script>
   $(function () {
