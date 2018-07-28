@@ -1,16 +1,42 @@
 <div class="header-submenu is-tds" id="js-header-submenu">
-    <div class="logo"><img src="../images/homepage/icon/logo.png"></div>
-    <div class="header-inner js-scroll-wrap">
-        <ul class="js-scroll-contents" style="margin-left: 0; width: 2092px;">
-            <li class="smenu-home"><a href="index.html"><span>Homepage</span></a></li>
-            <li class="smenu-restaurant"><a href="restaurant.html"><span>Restaurant</span></a></li>
-            <li class="smenu-entertainment"><a href="entertainment.html"><span>Entertainment</span></a></li>
-            <li class="smenu-attraction"><a href="attraction.html"><span>Attraction</span></a></li>
-            <li class="smenu-gallery"><a href="gallery.html"><span>Gallery</span></a></li>
-            <li class="smenu-ticket"><a href="ticket.html"><span>Ticket</span></a></li>
-            <li class="smenu-contact"><a href="contact.html"><span>Contact Us</span></a></li>
-            <li class="smenu-registration"><a href="registration.html"><span>Registration</span></a></li>
-            <li class="smenu-faq"><a href="faq.html"><span>FAQ</span></a></li>
-        </ul>
-    </div>
+  <div class="logo"><img src="../images/homepage/icon/logo.png"></div>
+  <div class="header-inner js-scroll-wrap">
+    <ul class="js-scroll-contents" style="margin-left: 0; width: 2092px;">
+      <li class="smenu-home"><a href="index.html"><span>Homepage</span></a></li>
+      <li class="smenu-restaurant"><a href="restaurant.html"><span>Restaurant</span></a></li>
+      <li class="smenu-entertainment"><a href="entertainment.html"><span>Entertainment</span></a></li>
+      <li class="smenu-attraction"><a href="attraction.html"><span>Attraction</span></a></li>
+      <li class="smenu-gallery"><a href="gallery.html"><span>Gallery</span></a></li>
+      <li class="smenu-ticket"><a href="ticket.html"><span>Ticket</span></a></li>
+      <li class="smenu-contact"><a href="contact.html"><span>Contact Us</span></a></li>
+      <li class="smenu-registration"><a href="registration.html"><span>Registration</span></a></li>
+      <li class="smenu-faq"><a href="faq.html"><span>FAQ</span></a></li>
+    </ul>
+  </div>
 </div>
+<script>
+  $(function () {
+    const map = {
+      'index.html': '.smenu-home',
+      'restaurant.html': '.smenu-restaurant',
+      'entertainment.html': '.smenu-entertainment',
+      'indoors.html': '.smenu-entertainment',
+      'outdoors.html': '.smenu-entertainment',
+      'attraction.html': '.smenu-attraction',
+      'gallery.html': '.smenu-gallery',
+      'ticket.html': '.smenu-ticket',
+      'contact.html': '.smenu-contact',
+      'registration.html': '.smenu-registration',
+      'faq.html': '.smenu-faq',
+    };
+
+    const splitted = window.location.pathname.split('/');
+
+    const currentPath = splitted[splitted.length -1];
+
+    const currentClass = map[currentPath];
+
+    $(currentClass).addClass('is-active');
+
+  })
+</script>

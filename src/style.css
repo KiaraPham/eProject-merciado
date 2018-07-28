@@ -2,14 +2,16 @@ ol, ul {
     list-style: none;
 }
 
-html, body {
-    background: #F7F5E6;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+/*html, body {*/
+    /*background: #F7F5E6;*/
+    /*height: 100%;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+/*}*/
+.row-margin {
+    margin-bottom: 20px;
 }
-
 .text-center {
     text-align: center;
 }
@@ -142,15 +144,18 @@ html, body {
     overflow: hidden;
     height: 100px;
     -webkit-overflow-scrolling: touch;
-    padding: 0;
     margin: 5px;
     max-width: inherit;
     float: left;
     width: 20%;
+    padding-left: 50px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
 }
 
 #header .header-submenu .logo img {
-    width: 95%;
+    width: 85%;
     height: 90%;
     margin-left: 10px;
 }
@@ -280,6 +285,81 @@ a {
 
 #header .header-submenu .header-inner ul li.smenu-faq a span:before {
     background: url(../images/homepage/icon/icon_faq.svg) no-repeat center;
+}
+
+#header .header-submenu .header-inner ul li.is-active {
+    border-radius: 5px 5px 0 0;
+    height: 93px;
+    border-top: 1px solid #07c;
+    border-left: 1px solid #07c;
+    border-right: 1px solid #07c;
+}
+#header .header-submenu .header-inner ul li.is-active a {
+    display: block;
+    width: 100%;
+    height: 94px;
+}
+
+#header .header-submenu .header-inner ul li.is-active a:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../images/homepage/icon/menu_desing_left2.png) no-repeat 0 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+}
+
+#header .header-submenu .header-inner ul li.is-active a:before {
+    background: url(../images/homepage/icon/menu_desing_left2_retina.png) no-repeat 0 0;
+    background-size: 10px 10px;
+}
+
+#header .header-submenu .header-inner ul li.is-active a:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../images/homepage/icon/menu_desing_right2.png) no-repeat 0 0;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;
+}
+#header .header-submenu .header-inner ul li.is-active a:after {
+    background: url(../images/homepage/icon/menu_desing_right2_retina.png) no-repeat 0 0;
+    background-size: 10px 10px;
+}
+
+
+
+#header .header-submenu .header-inner ul li.is-active:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background: #fff;
+    z-index: 1;
+}
+
+#header .header-submenu .header-inner ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#header .header-submenu:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #07c;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
 }
 
 /* main content*/
@@ -1075,6 +1155,7 @@ table.table-bordered > tbody > tr > th {
 
 /* gallery */
 
+
 .row > .column {
     padding: 0 10px;
 }
@@ -1091,28 +1172,28 @@ table.table-bordered > tbody > tr > th {
 }
 
 /* The Modal (background) */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: black;
-}
+/*.modal {*/
+    /*display: none;*/
+    /*position: fixed;*/
+    /*z-index: 1;*/
+    /*padding-top: 100px;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*overflow: auto;*/
+    /*background-color: black;*/
+/*}*/
 
 /* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 950px;
-}
+/*.modal-content {*/
+    /*position: relative;*/
+    /*background-color: #fefefe;*/
+    /*margin: auto;*/
+    /*padding: 0;*/
+    /*width: 90%;*/
+    /*max-width: 950px;*/
+/*}*/
 
 /* The Close Button */
 .close {
@@ -1249,7 +1330,6 @@ img.hover-shadow {
     padding: 0;
     font-size: 13px;
     position: relative;
-    z-index: 99;
 }
 
 .pb-10 {
@@ -1526,6 +1606,7 @@ img.hover-shadow {
 /* ================= Event ================= */
 .our-blog {
     position: relative;
+    margin-top: 15px
 }
 
 .thumbnail {

@@ -1,7 +1,9 @@
 // top-up button
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -208,6 +210,59 @@ $(document).ready(function () {
 
   }
 
-})
-;
+});
 
+// calendar
+
+$(function () {
+  $('#calendar').fullCalendar({
+    // put your options and callbacks here
+    eventRender: function (eventObj, $el) {
+      $el.popover({
+        title: eventObj.title,
+        content: eventObj.start,
+        trigger: 'hover',
+        placement: 'top',
+        container: 'body'
+      });
+    },
+    events: [
+      {
+        title: '4D Projection Promotion',
+        start: '2018-07-31T17:30:00'
+      },
+      {
+        title: 'Fantasmics',
+        start: '2018-08-05T14:30:00',
+      },
+      {
+        title: 'My Friend Duffy',
+        start: '2018-09-07T16:30:00',
+      },
+      {
+        title: 'Brand New Dream',
+        start: '2018-09-09T17:30:00'
+      },
+      {
+        title: 'Out of Shadowland',
+        start: '2018-09-15T14:30:00',
+      },
+      {
+        title: 'My Friend Duffy',
+        start: '2018-09-16T16:30:00',
+      },
+      {
+        title: 'Journey to the Center of the Earth',
+        start: '2018-10-06T17:30:00'
+      },
+      {
+        title: 'Mermaid Lagoon Theater',
+        start: '2018-10-07T14:30:00',
+      },
+      {
+        title: 'Toy Story',
+        start: '2018-10-20T16:30:00',
+      }
+    ]
+  })
+});

@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
 
+  <link rel="stylesheet" href="../node_modules/fullcalendar/dist/fullcalendar.css">
+
 </head>
 <body>
 <div id="header"></div>
 
 <div class="main-content">
+
   <div class="slide-show">
     <div class="slider">
       <div class="slide_viewer">
@@ -58,10 +61,12 @@
 
   <div class="linkList3">
     <ul>
-      <li class="btn-calendar"><a href="/en/tds//calendar" style="height: 131px;">Park Operation
-        Calendar</a></li>
-      <li class="btn-waitingtime"><a href="/en/tds/daily/calendar" style="height: 131px;">Today</a></li>
-      <li class="btn-access"><a href="contact.html" style="height: 131px;">Getting Here</a></li>
+      <li class="btn-calendar" data-toggle="modal" data-target="#calendarModal">
+        <a href="#" style="height: 131px;">Park Operation Calendar</a>
+      </li>
+      <li class="btn-access">
+        <a href="contact.html" style="height: 131px;">Getting Here</a>
+      </li>
     </ul>
   </div>
 
@@ -161,12 +166,33 @@
       </ul>
     </div>
   </div>
+
+  <div class="modal fade" id="calendarModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Merciado Event</h4>
+        </div>
+        <div class="modal-body">
+          <div id='calendar'></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 <div id="footer"></div>
 <button onclick="topFunction()" id="topUpBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/moment/moment.js"></script>
+<script src="../node_modules/fullcalendar/dist/fullcalendar.js"></script>
+
 <script>
   $(function () {
     $("#header").load("header.html");
