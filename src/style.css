@@ -13,23 +13,26 @@ html, body {
 .text-center {
     text-align: center;
 }
+
 /* Title for each tab */
 /* Attraction */
 .attraction-title {
     font-weight: 600;
     font-family: Apple Chancery, cursive;
-    position:relative;
+    position: relative;
     font-size: 35px;
 }
+
 .attraction-title a {
     color: #92670b;
     text-decoration: none;
 }
+
 .attraction-title a span:before {
     content: "\f522";
     font-family: "Font Awesome 5 Free";
-    left:-5px;
-    top:0;
+    left: -5px;
+    top: 0;
     margin-right: 10px;
     font-size: 50px;
     color: #92670b;
@@ -40,18 +43,20 @@ html, body {
 .entertainment-title {
     font-weight: 600;
     font-family: Apple Chancery, cursive;
-    position:relative;
+    position: relative;
     font-size: 35px;
 }
+
 .entertainment-title a {
     color: #007d9b;
     text-decoration: none;
 }
+
 .entertainment-title a span:before {
     content: "\f522";
     font-family: "Font Awesome 5 Free";
-    left:-5px;
-    top:0;
+    left: -5px;
+    top: 0;
     margin-right: 10px;
     font-size: 50px;
     color: #007d9b;
@@ -62,9 +67,10 @@ html, body {
 .restaurant-title {
     font-weight: 600;
     font-family: Apple Chancery, cursive;
-    position:relative;
+    position: relative;
     font-size: 35px;
 }
+
 .restaurant-title a {
     color: #018639;
     text-decoration: none;
@@ -82,6 +88,28 @@ html, body {
     will-change: top;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+/* Top up button */
+
+#topUpBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #aa5401; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+}
+
+#topUpBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /* header - submenu */
@@ -1019,6 +1047,7 @@ table.table-bordered > tbody > tr > th {
     padding-left: 3%;
     padding-right: 5px
 }
+
 /*
 #indoorbtn {
     background-color: #337ab7;
@@ -1174,9 +1203,10 @@ img.hover-shadow {
 
 /* restaurant */
 
- /*.text-orange { color: #F71735; }*/
-.black-bg { background: #1e2327; }
-
+/*.text-orange { color: #F71735; }*/
+.black-bg {
+    background: #1e2327;
+}
 
 .carousel-inner img {
     /*-webkit-filter: grayscale(90%);*/
@@ -1250,6 +1280,7 @@ img.hover-shadow {
 .our-menu {
     position: relative;
 }
+
 /*
 .our-menu.belief .container-fuild {
     padding: 0 50px;
@@ -1426,7 +1457,6 @@ img.hover-shadow {
     margin-bottom: 10px;
 }
 
-
 .section-title p {
     font-style: italic;
     font-size: 14px;
@@ -1507,6 +1537,7 @@ img.hover-shadow {
     margin-top: 15px;
     color: #8d8d8d;
 }
+
 /*
 .btn {
     padding: 10px 20px;

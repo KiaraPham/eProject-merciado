@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free": "^5.1.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.3.1",
+    "jquery-calendar": "^0.1.0",
     "lodash": "^4.17.10",
     "material-design-iconic-font": "^2.2.0",
     "nanoscroller": "^0.8.7",
