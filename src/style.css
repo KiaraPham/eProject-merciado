@@ -1,3 +1,7 @@
+html, body {
+    font-family: Optima, sans-serif	;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -46,13 +50,13 @@ ol, ul {
     position: relative;
     margin-top: 150px;
     margin-bottom: 60px;
+    color: #07c;
 }
 
 .heading1 {
     font-family: Jazz LET, fantasy;
-    font-size: 225%;
+    font-size: 250%;
     line-height: 1.222;
-    color: #07c;
     text-align: center;
     max-width: 1080px;
     margin: 0 auto 25px;
@@ -90,6 +94,12 @@ ol, ul {
     font-size: 50px;
     color: #92670b;
 }
+.attraction-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #92670b;
+}
 
 /* Title for each tab Entertainment */
 
@@ -112,6 +122,12 @@ ol, ul {
     top: 0;
     margin-right: 10px;
     font-size: 50px;
+    color: #007d9b;
+}
+.entertainment-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
     color: #007d9b;
 }
 
@@ -140,6 +156,12 @@ ol, ul {
     font-size: 50px;
     color: #018639;
 }
+.restaurant-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #018639;
+}
 
 /* Title for each tab Gallery */
 
@@ -155,6 +177,46 @@ ol, ul {
 .gallery-title a {
     color: #007d9b;
     text-decoration: none;
+}
+.gallery-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #007d9b;
+}
+
+/* Title for each tab Contact */
+.contact-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #7d169f;
+}
+
+
+/* Title for each tab faq */
+
+.faq-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #018639;
+}
+
+/* Title for each tab Registration */
+.registration-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #aa5401;
+}
+
+/* Title for each tab Registration */
+.ticket-pageTitle {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    color: #679b25;
 }
 
 /* header - top */
@@ -273,6 +335,7 @@ a {
 }
 
 #header .header-submenu .header-inner ul li a span {
+    font-size: 120%;
     line-height: 1;
     display: block;
     padding: 15px 0 0;
@@ -657,10 +720,36 @@ footer iframe {
 }
 
 /* faq tab - right side*/
+.leftNavigation-top, .leftNavigation-bottom {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.leftNavigation-top .categoryTitle, .leftNavigation-bottom .categoryTitle {
+    font-size: 150%;
+    color: #07c;
+    padding-bottom: 20px;
+}
+.leftNavigation-top .leftNavigation-block, .leftNavigation-bottom .leftNavigation-block {
+    margin-bottom: 20px;
+}
+.leftNavigation-top .link, .leftNavigation-bottom .link {
+    border-top: 1px solid #ccc;
+    margin-bottom: 35px;
+}
+.leftNavigation-top .link li a, .leftNavigation-bottom .link li a {
+    display: block;
+    padding: 20px 0;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .pbAnchor {
     margin: 0;
     padding: 2px;
-    font-family: "ＭＳ Ｐゴシック", MS Gothic, "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
     line-height: normal;
     text-indent: 0;
     overflow: visible !important;
