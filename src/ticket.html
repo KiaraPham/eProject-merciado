@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="ticket-price.css">
 
 </head>
 <body>
@@ -17,45 +18,17 @@
       <div class="pbNested pbNestedWrapper " id="pbBlock1874139">
         <div class="ticket-pageTitle"><h1 class="heading1">Park Tickets</h1></div>
       </div>
-      <div class="row">
-        <div class="container mt-5">
+      <div class="layout-ticket">
+        <div>
 
-          <div class="row" style="height:550px;" data-sticky_parent>
+          <div style="height:550px;" data-sticky_parent>
 
-            <div class="col-md-5 maps ">
-              <table class="table table-bordered">
-                <thead>
-                <tr>
-                  <th></th>
-                  <th>Child(4-11)</th>
-                  <th>Junior(12-17)</th>
-                  <th>Adult(18+)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <th scope="row">Weekday Pack</th>
-                  <td>$15</td>
-                  <td>$20</td>
-                  <td>$30</td>
-                </tr>
-                <tr>
-                  <th scope="row">Weekend Pack</th>
-                  <td>$20</td>
-                  <td>$25</td>
-                  <td>$35</td>
-                </tr>
-                <tr>
-                  <th scope="row">Family Pack</th>
-                  <td>$17</td>
-                  <td>$22</td>
-                  <td>$32</td>
-                </tr>
-                </tbody>
-              </table>
+            <div class="layout-ticket-left ">
+              <h3 class="text-center">Ticket Price</h3>
+              <div id="ticket-price-table"></div>
             </div>
 
-            <div class="col-md-7">
+            <div class="layout-ticket-right">
               <h3 class="text-center">Purchase Ticket Online</h3>
               <div class="stepwizard">
                 <div class="stepwizard-row setup-panel ">
@@ -92,9 +65,9 @@
                       <label class="control-label">Package Type</label>
                       <select required="required" class="form-control"
                               id="package-type">
-                        <option>Weekday Pack</option>
-                        <option>Weekend Pack</option>
-                        <option>Family Pack</option>
+                        <option value="weekday">Weekday Pack</option>
+                        <option value="weekend">Weekend Pack</option>
+                        <option value="family">Family Pack</option>
                       </select>
                     </div>
                     <div class="form-group">
@@ -302,6 +275,7 @@
   $(function () {
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    $("#ticket-price-table").load("ticket-price.html");
   });
 </script>
 <script src="script.js"></script>
