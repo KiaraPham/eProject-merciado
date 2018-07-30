@@ -34,7 +34,7 @@
 
     const currentPath = splitted[splitted.length -1];
 
-    const currentClass = map[currentPath];
+    const currentClass = map[currentPath] || '.smenu-home';
 
     $(currentClass).addClass('is-active');
 
