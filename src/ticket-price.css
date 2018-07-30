@@ -366,3 +366,27 @@ body .layout-ticket .card_inner__cta button:hover {
         transform: scale(1);
     }
 }
+
+.highlight {
+    -webkit-animation-name: popout;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes popout {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    20% {
+        -webkit-transform: scale(0.90);
+        -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        -webkit-animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+    }
+}

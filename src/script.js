@@ -185,29 +185,29 @@ $(document).ready(function () {
     } // End if
   });
 
-  // let $sticky = $('.sticky');
-  // let $stickyrStopper = $('.sticky-stopper');
-  // if (!!$sticky.offset()) { // make sure ".sticky" element exists
-  //   let generalSidebarHeight = $sticky.innerHeight();
-  //   let stickyTop = $sticky.offset().top;
-  //   let stickOffset = 100;
-  //   let stickyStopperPosition = $stickyrStopper.offset().top;
-  //   let stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
-  //   let diff = stopPoint + stickOffset;
-  //
-  //   $(window).scroll(function () { // scroll event
-  //     let windowTop = $(window).scrollTop(); // returns number
-  //
-  //     if (stopPoint < windowTop) {
-  //       $sticky.css({position: 'absolute', top: diff});
-  //     } else if (stickyTop < windowTop + stickOffset) {
-  //       $sticky.css({position: 'fixed', top: stickOffset});
-  //     } else {
-  //       $sticky.css({position: 'absolute', top: 'initial'});
-  //     }
-  //   });
-  //
-  // }
+  let $sticky = $('.sticky');
+  let $stickyrStopper = $('.sticky-stopper');
+  if (!!$sticky.offset()) { // make sure ".sticky" element exists
+    let generalSidebarHeight = $sticky.innerHeight();
+    let stickyTop = $sticky.offset().top;
+    let stickOffset = 100;
+    let stickyStopperPosition = $stickyrStopper.offset().top;
+    let stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
+    let diff = stopPoint + stickOffset;
+
+    $(window).scroll(function () { // scroll event
+      let windowTop = $(window).scrollTop(); // returns number
+
+      if (stopPoint < windowTop) {
+        $sticky.css({position: 'absolute', top: diff});
+      } else if (stickyTop < windowTop + stickOffset) {
+        $sticky.css({position: 'fixed', top: stickOffset});
+      } else {
+        $sticky.css({position: 'absolute', top: 'initial'});
+      }
+    });
+
+  }
 
 });
 

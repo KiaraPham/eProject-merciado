@@ -271,7 +271,7 @@
             <img src="../images/restaurant/event-1.jpg" alt="event 1" width="400" height="300">
             <h4>Music For Your Soul</h4>
             <p><em>Friday 10 August 2018</em></p>
-            <button class="btn btn-success">Read More</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#event-1">Read More</button>
           </div>
         </div>
 
@@ -280,7 +280,7 @@
             <img src="../images/restaurant/event-2.jpg" alt="event 2" width="400" height="300">
             <h4>Romantic Valentine's Day Dinner</h4>
             <p><em>Saturday 25 August 2018</em></p>
-            <button class="btn btn-success">Read More</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#event-2">Read More</button>
           </div>
         </div>
 
@@ -289,7 +289,7 @@
             <img src="../images/restaurant/event-3.jpg" alt="event 3" width="400" height="300">
             <h4>Party With Friends</h4>
             <p><em>Sunday 02 September 2018</em></p>
-            <button class="btn btn-success">Read More</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#event-3">Read More</button>
           </div>
         </div>
       </div>
@@ -298,9 +298,87 @@
   <!-- ================= End Event ================= -->
 </div>
 
+
 <div id="footer"></div>
 <button onclick="topFunction()" id="topUpBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
+<div class="modal fade" id="event-1" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal">&times;
+        </button>
+        <h4 class="modal-title">Music For Your Soul</h4>
+      </div>
+      <div class="modal-body">
+        <img src="../images/restaurant/event-1.jpg" alt="event 1" width="550" height="300">
+        <p><em>Friday 10 August 2018</em></p>
+        <p>Come to this event, you will be released into the music with different types of music, served with diverse
+          dishes, diverse, enthusiastic service of restaurant staff. The party will give you a great experience!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="event-2" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal">&times;
+        </button>
+        <h4 class="modal-title">Romantic Valentine's Day Dinner</h4>
+      </div>
+      <div class="modal-body">
+        <img src="../images/restaurant/event-2.jpg" alt="event 2" width="550" height="300">
+        <p><em>Saturday 25 August 2018</em></p>
+        <p>Come to this event, you will be released into the music with different types of music, served with diverse
+          dishes, diverse, enthusiastic service of restaurant staff. The party will give you a great experience!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="event-3" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal">&times;
+        </button>
+        <h4 class="modal-title">Party With Friends</h4>
+      </div>
+      <div class="modal-body">
+        <img src="../images/restaurant/event-3.jpg" alt="event 3" width="550" height="300">
+        <p><em>Sunday 02 September 2018</em></p>
+        <p>Come to this event, you will be released into the music with different types of music, served with diverse
+          dishes, diverse, enthusiastic service of restaurant staff. The party will give you a great experience!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
@@ -310,6 +388,7 @@
     $("#footer").load("footer.html");
   });
 </script>
+
 <script src="script.js"></script>
 </body>
 </html>

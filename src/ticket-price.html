@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class='layout-ticket' id="ticket-price-table">
-  <section class='card'>
+  <section class='card' id="weekday-card">
     <div class='card_inner'>
       <div class='card_inner__circle'>
         <img src='../images/ticket/card-inner-circle-rocket.png'>
@@ -27,13 +27,11 @@
         </div>
       </div>
       <div class='card_inner__cta'>
-        <button>
-          <span role="button" id="weekday-btn">Select Package</span>
-        </button>
+        <button role="button" id="weekday-btn">Select Package</button>
       </div>
     </div>
   </section>
-  <section class='card'>
+  <section class='card' id="weekend-card">
     <div class='card_inner'>
       <div class='card_inner__circle'>
         <img src='../images/ticket/card-inner-circle-cog.png'>
@@ -51,13 +49,11 @@
         </div>
       </div>
       <div class='card_inner__cta'>
-        <button>
-          <span id="weekend-btn">Select Package</span>
-        </button>
+        <button id="weekend-btn">Select Package</button>
       </div>
     </div>
   </section>
-  <section class='card'>
+  <section class='card'id="family-card">
     <div class='card_inner'>
       <div class='card_inner__circle'>
         <img src='../images/ticket/card-inner-circle-paperplane.png'>
@@ -75,9 +71,7 @@
         </div>
       </div>
       <div class='card_inner__cta'>
-        <button>
-          <span id="family-btn">Select Package</span>
-        </button>
+        <button id="family-btn">Select Package</button>
       </div>
     </div>
   </section>
@@ -87,13 +81,34 @@
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script>
   $('#weekday-btn').click(function(){
+    $('#weekday-card').css('opacity',1);
+    $('#weekend-card').css('opacity',0.6);
+    $('#family-card').css('opacity',0.6);
     $('#package-type').val('weekday').trigger('change');
+    $("#package-type").addClass('highlight');
+    setTimeout(function(){
+      $("#package-type").removeClass('highlight');
+    }, 300)
   }),
   $('#weekend-btn').click(function(){
+    $('#weekend-card').css('opacity',1);
+    $('#weekday-card').css('opacity',0.6);
+    $('#family-card').css('opacity',0.6);
     $('#package-type').val('weekend').trigger('change');
+    $("#package-type").addClass('highlight');
+    setTimeout(function(){
+      $("#package-type").removeClass('highlight');
+    }, 300)
   }),
   $('#family-btn').click(function(){
+    $('#family-card').css('opacity',1);
+    $('#weekend-card').css('opacity',0.6);
+    $('#weekday-card').css('opacity',0.6);
     $('#package-type').val('family').trigger('change');
+    $("#package-type").addClass('highlight');
+    setTimeout(function(){
+      $("#package-type").removeClass('highlight');
+    }, 300)
   })
 </script>
 </body>
