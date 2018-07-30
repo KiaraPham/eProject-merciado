@@ -148,7 +148,8 @@ $(document).ready(function () {
     }
 
     if (isValid) {
-      nextStepWizard.removeAttr('disabled').trigger('click');
+      nextStepWizard.removeAttr('disabled');
+      nextStepWizard.get(0).click();
       if (curStepBtn === 'step-2') {
         showConfirmInfo();
       }
