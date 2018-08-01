@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Merciado Amusement Park</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
@@ -71,7 +71,7 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label class="control-label">*Date</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Date</label>
                       <input maxlength="100" type="date" required="required"
                              id="date-input"
                              class="form-control"/>
@@ -102,42 +102,66 @@
                   </div>
                   <div class="panel-body">
                     <div class="form-group col-md-6">
-                      <label class="control-label">*First Name</label>
-                      <input maxlength="200" type="text" required="required"
-                             class="form-control"
-                             id="first-name-input"
-                             placeholder="Enter Your First Name"/>
+                      <label class="control-label"><span class="red-color-text">*</span>First Name</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-user"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               class="form-control"
+                               id="first-name-input"
+                               placeholder="Enter Your First Name"/>
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="control-label">*Last Name</label>
-                      <input maxlength="200" type="text" required="required"
-                             id="last-name-input"
-                             class="form-control" placeholder="Enter Your Last Name"/>
+                      <label class="control-label"><span class="red-color-text">*</span>Last Name</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-user"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               id="last-name-input"
+                               class="form-control" placeholder="Enter Your Last Name"/>
+                      </div>
                     </div>
                     <div class="form-group col-md-12">
                       <label class="control-label">Address</label>
-                      <input maxlength="200" type="text" required="required"
-                             id="address-input"
-                             class="form-control" placeholder="Enter Your Address"/>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-home"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               id="address-input"
+                               class="form-control" placeholder="Enter Your Address"/>
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="control-label">*Email</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Email</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-envelope"></span>
+                                </span>
                       <input maxlength="200" type="email" required="required"
                              id="email-input"
                              class="form-control" placeholder="Enter Your Email"/>
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="control-label">*Phone Number</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Phone Number</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-phone"></span>
+                                </span>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              id="phone-input"
                              placeholder="Enter Your Phone Number"/>
                     </div>
+                    </div>
                     <div class="form-group col-md-12">
-                      <label class="control-label">*Credit Card Number</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Credit Card Number</label>
+                      <div class="input-group">
+                      <span class="input-group-addon"><span class="fa fa-credit-card"></span>
+                                </span>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              placeholder="Enter Your Credit Card Number e.g = xxxx-xxxx-xxxx-xxxx"/>
+                    </div>
                     </div>
                     <div class="form-group col-md-12">
                       <label class="control-label">Credit Card Type</label>
@@ -150,13 +174,13 @@
                       <img src="images/ticket/paypal.png" width="50" height="30">
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="control-label">*Pin Code</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Pin Code</label>
                       <input maxlength="200" type="number" required="required"
                              class="form-control"
                              placeholder="Enter Your Pin Code"/>
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="control-label">*Zip Code</label>
+                      <label class="control-label"><span class="red-color-text">*</span>Zip Code</label>
                       <input maxlength="200" type="text" required="required"
                              class="form-control"
                              placeholder="Enter Your Zip Code"/>

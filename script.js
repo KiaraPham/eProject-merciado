@@ -162,6 +162,8 @@ $(document).ready(function () {
     let curStepBtn = curStep.attr("id");
     let backStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
     backStepWizard.trigger('click');
+    backStepWizard.removeAttr('disabled');
+    backStepWizard.get(0).click();
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
@@ -211,6 +213,5 @@ $(document).ready(function () {
   }
 
 });
-
 
 
