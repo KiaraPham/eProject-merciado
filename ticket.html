@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merciado Amusement Park</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="ticket-price.css">
+
+</head>
+<body>
+<div id="header"></div>
+
+<div id="mainArea" class=" main-content pbMainArea">
+  <div id="area0" class="pbArea ">
+    <div class="pbNested ">
+      <div class="pbNested pbNestedWrapper " id="pbBlock1874139">
+        <div class="ticket-pageTitle"><h1 class="heading1">Park Tickets</h1></div>
+      </div>
+      <div class="layout-ticket">
+        <div>
+
+          <div style="height:550px;" data-sticky_parent>
+
+            <div class="layout-ticket-left ">
+              <h3 class="text-center">Ticket Price</h3>
+              <div id="ticket-price-table"></div>
+            </div>
+
+            <div class="layout-ticket-right">
+              <h3 class="text-center">Purchase Ticket Online</h3>
+              <div class="stepwizard">
+                <div class="stepwizard-row setup-panel ">
+                  <div class="stepwizard-step col-xs-4">
+                    <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                    <p>
+                      <small>Ticket Information</small>
+                    </p>
+                  </div>
+                  <div class="stepwizard-step col-xs-4">
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle"
+                       disabled="disabled">2</a>
+                    <p>
+                      <small>Personal Information</small>
+                    </p>
+                  </div>
+                  <div class="stepwizard-step col-xs-4">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle"
+                       disabled="disabled">3</a>
+                    <p>
+                      <small>Confirm Information</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <form role="form">
+                <div class="row panel panel-primary setup-content" id="step-1">
+                  <div class=" panel-heading">
+                    <h3 class="panel-title">Ticket Information</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label">Package Type</label>
+                      <select required="required" class="form-control"
+                              id="package-type">
+                        <option value="weekday">Weekday Pack</option>
+                        <option value="weekend">Weekend Pack</option>
+                        <option value="family">Family Pack</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label"><span class="red-color-text">*</span>Date</label>
+                      <input maxlength="100" type="date" required="required"
+                             id="date-input"
+                             class="form-control"/>
+                    </div>
+                    <div>
+                      <div class="form-group child-ticket-input-form">
+                        <label class="control-label">Number of Child Tickets (4-11)</label>
+                        <input type="number" class="form-control" id="child-input" placeholder="0"/>
+                      </div>
+                      <div class="form-group junior-ticket-input-form">
+                        <label class="control-label">Number of Junior Tickets (12-17)</label>
+                        <input type="number" class="form-control" id="junior-input" placeholder="0"/>
+                      </div>
+                      <div class="form-group adult-ticket-input-form">
+                        <label class="control-label">Number of Adults Tickets (18+)</label>
+                        <input type="number" class="form-control" id="adult-input" placeholder="0"/>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right"
+                            type="button">Next
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row panel panel-primary setup-content" id="step-2">
+                  <div class=" panel-heading">
+                    <h3 class="panel-title">Personal Information</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>First Name</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-user"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               class="form-control"
+                               id="first-name-input"
+                               placeholder="Enter Your First Name"/>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>Last Name</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-user"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               id="last-name-input"
+                               class="form-control" placeholder="Enter Your Last Name"/>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label class="control-label">Address</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-home"></span>
+                                </span>
+                        <input maxlength="200" type="text" required="required"
+                               id="address-input"
+                               class="form-control" placeholder="Enter Your Address"/>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>Email</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-envelope"></span>
+                                </span>
+                      <input maxlength="200" type="email" required="required"
+                             id="email-input"
+                             class="form-control" placeholder="Enter Your Email"/>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>Phone Number</label>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="fa fa-phone"></span>
+                                </span>
+                      <input maxlength="200" type="text" required="required"
+                             class="form-control"
+                             id="phone-input"
+                             placeholder="Enter Your Phone Number"/>
+                    </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label class="control-label"><span class="red-color-text">*</span>Credit Card Number</label>
+                      <div class="input-group">
+                      <span class="input-group-addon"><span class="fa fa-credit-card"></span>
+                                </span>
+                      <input maxlength="200" type="text" required="required"
+                             class="form-control"
+                             placeholder="Enter Your Credit Card Number e.g = xxxx-xxxx-xxxx-xxxx"/>
+                    </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label class="control-label">Credit Card Type</label>
+                      <input required="" type="radio" name="card" checked>
+                      <img src="images/ticket/mastercard.jpeg" height="30"
+                           width="50"/>
+                      <input required="" type="radio" name="card">
+                      <img src="images/ticket/visa.png" width="50" height="30">
+                      <input required="" type="radio" name="card">
+                      <img src="images/ticket/paypal.png" width="50" height="30">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>Pin Code</label>
+                      <input maxlength="200" type="number" required="required"
+                             class="form-control"
+                             placeholder="Enter Your Pin Code"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label"><span class="red-color-text">*</span>Zip Code</label>
+                      <input maxlength="200" type="text" required="required"
+                             class="form-control"
+                             placeholder="Enter Your Zip Code"/>
+                    </div>
+                    <div class="pull-right">
+                      <div class="wrap" data-pos="0">
+                        <button class="btn btn-default backBtn btn-lg" type="button">Back</button>
+                        <button class="btn btn-primary nextBtn btn-lg" type="button">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row panel panel-primary setup-content" id="step-3">
+                  <div class=" panel-heading">
+                    <h3 class="panel-title">Confirm Information</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="form-group col-md-6">
+                      <label class="control-label">First Name: </label>
+                      <span id="first-name-display">First Name</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label">Last Name: </label>
+                      <span id="last-name-display">Last Name</span>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label class="control-label">Address: </label>
+                      <span id="address-display">Ho Chi Minh City</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label">Email: </label>
+                      <span id="email-display">name@gmail.com</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label">Phone Number: </label>
+                      <span id="phone-display">09x.000.xxx</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label">Package Type: </label>
+                      <span id="package-display">Weekend Pack</span>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="control-label">Date: </label>
+                      <span id="date-display">02/02/2019</span>
+                    </div>
+                    <div>
+                      <div class="form-group col-md-12">
+                        <label class="control-label">Number of Child Tickets (4-11): </label>
+                        <span id="child-display">1</span>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label class="control-label">Number of Junior Tickets (12-17): </label>
+                        <span id="junior-display">2</span>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label class="control-label"> Number of Adults Tickets (18+): </label>
+                        <span id="adult-display">3</span>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label class="control-label">Total Price: </label>
+                        <span id="price-display">177</span>
+                      </div>
+
+                      <div class="pull-right">
+                        <div class="wrap" data-pos="0">
+                          <!-- Trigger the modal with a button -->
+                          <button type="button" class="btn btn-info btn-lg"
+                                  data-toggle="modal" data-target="#myModal">Book Now!
+                          </button>
+                          <!-- Modal -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer"></div>
+<button onclick="topFunction()" id="topUpBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+                data-dismiss="modal">&times;
+        </button>
+        <h4 class="modal-title">Merciado Announcement</h4>
+      </div>
+      <div class="modal-body">
+        <p>Purchase Ticket Successfully! Thank you!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    $("#ticket-price-table").load("ticket-price.html");
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
